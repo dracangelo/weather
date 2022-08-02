@@ -1,5 +1,3 @@
-from multiprocessing import context
-import requests
 from django.shortcuts import render
 import requests
 
@@ -20,4 +18,4 @@ def index(request):
 
     context = {'city_weather':city_weather}
 
-    return render(request, 'weather/weather.html')
+    return render(request, 'weather/weather.html', context)
